@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>audio element</title>
+   <script src="Modernizr-2.0.6.js"></script>
+</head>
+<body>
+    <audio id="audio" controls autoplay src="audio/viviv.ogg">
+        Error@@@@@!!!!!
+    </audio>
+
+    <script>
+        if (!Modernizr.audio) {
+            alter("Error@@@!!!")
+        }
+        else {
+            var audio = document.getElementById("audio")
+            var res = audio.canPlayType("sdfsdfsdfdsf")
+            if (res) alert(res + "sdfsdfsfdsfsf")
+            else alert("no support!!")
+        }                                                                    
+
+
+
+
+    </script>
+    
+</body>
+</html>
