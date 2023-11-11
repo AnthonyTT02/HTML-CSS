@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>box-flex</title>
+   <style>
+    div {
+        display: -moz-box;
+        display: -webkit-box;
+        display: flexbox;
+
+        border: 1px solid black;
+        width: 100%;
+
+    }
+
+    p{
+        padding: 20px;
+
+    }
+
+    #p1 {
+        -mo2-box-flex: 1.0;
+        -webkit-box-flex: 1.0;
+        box-flex: 1.0;
+
+        border: 1px solid red;
+    }
+
+    #p2 {
+        -moz-box-flex: 1.0;
+        -webkit-box-flex: 1.0;
+        box-flex: 1.0;
+
+        border: 1px solid blue;
+
+    }
+   </style>
+</head>
+<body>
+    <div>
+        <p id="p1">Left column</p>
+        <p id="p2">Right Column</p>
+    </div>
+</body>
+</html>
