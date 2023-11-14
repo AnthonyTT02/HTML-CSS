@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>:invalid</title>
+    <style>
+        input:invalid {
+            background: #fdd;
+            font-weight: bold;
+        }
+
+        input:valid {
+            background: #dfd;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <p>Site address</p>
+        <p>
+            <input type="url" required />
+        </p>
+
+        <p>Post address</p>
+        <p>
+            <input type="email" required />
+        </p>
+
+        <p>
+            <input type="submit" value="Send" />
+        </p>
+    </form>
+</body>
+</html>

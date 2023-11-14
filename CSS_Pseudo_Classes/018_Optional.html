@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>:optional</title>
+    <style>
+        input[type=text]:optional {
+            border: 2px dashed gray;
+        }
+
+        input:required {
+            border: 2px dashed red;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <p>Please enter your name and age</p>
+        <p>
+            Name:
+            <input type="text" name="name">
+        </p>
+        <p>
+            Age:
+            <input type="number" min="18" required name="old" title="enter your age">
+        </p>
+        <p>
+            <input type="submit" value="Send">
+        </p>
+    </form>
+</body>
+</html>
